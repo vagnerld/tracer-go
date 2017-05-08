@@ -31,7 +31,7 @@ func tracer(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-    fmt.Println("PicPay Tracer")
+    fmt.Println("Tracer")
     fmt.Println("\n")
     http.HandleFunc("/", tracer) // set router
     err := http.ListenAndServe(":5003", nil) // set listen port
